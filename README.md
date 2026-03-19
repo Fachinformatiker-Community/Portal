@@ -23,11 +23,11 @@ pnpm install
 
 ## Befehle
 
-| Befehl            | Beschreibung                        |
-| ----------------- | ----------------------------------- |
-| `pnpm dev`        | Entwicklungsserver starten          |
-| `pnpm build`      | Produktions-Build erstellen         |
-| `pnpm preview`    | Produktions-Build lokal vorschauen  |
+| Befehl               | Beschreibung                                      |
+| -------------------- | ------------------------------------------------- |
+| `pnpm dev:portal`    | Entwicklungsserver für die Landing Page           |
+| `pnpm dev:error`     | Entwicklungsserver für die 404-Fehlerseite        |
+| `pnpm build`         | Produktions-Build für alle Apps erstellen         |
 
 ## Lizenz
 
