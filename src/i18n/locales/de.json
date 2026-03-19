@@ -1,0 +1,54 @@
+{
+  "hero": {
+    "badge": "Von Azubis. Für Azubis.",
+    "headline1": "Gemeinsam durch",
+    "headline2": "die Ausbildung",
+    "subheadline": "Fachinformatiker Wiki ist eine Community-getriebene Plattform für alle Fachinformatiker-Azubis. Selbst erstellte Lernmaterialien, erfahrene Praxisprofis und verifizierte IHK-Prüfer — alles an einem Ort."
+  },
+  "features": {
+    "badge": "Was wir bieten",
+    "headline": "Alles für deine Ausbildung",
+    "subheadline": "Eine aktive Community aus Azubis, Fachleuten aus der Praxis und IHK-Prüfern — damit du bestens für deine Abschlussprüfung vorbereitet bist.",
+    "items": [
+      {
+        "icon": "📚",
+        "title": "Selbst erstellte Lernmaterialien",
+        "desc": "Lernunterlagen, Zusammenfassungen und Übungsaufgaben, erstellt von Azubis für Azubis — praxisnah und auf die IHK-Prüfung zugeschnitten."
+      },
+      {
+        "icon": "💬",
+        "title": "Fragen stellen & Antworten bekommen",
+        "desc": "Stell deine Fragen direkt im Forum — beantwortet von erfahrenen Fachinformatikern aus der Praxis und verifizierten IHK-Prüfern."
+      },
+      {
+        "icon": "✅",
+        "title": "Verifizierte IHK-Prüfer",
+        "desc": "Echte IHK-Prüfer sind Teil unserer Community. Erhalte Einblicke in Prüfungserwartungen und typische Bewertungskriterien direkt von der Quelle."
+      },
+      {
+        "icon": "👨‍💻",
+        "title": "GitHub Community",
+        "desc": "Lerne mit echten Projekten auf unserem GitHub. Gemeinsam coden, Code-Reviews und Open-Source-Beiträge mit Menschen, die täglich in der Branche arbeiten."
+      },
+      {
+        "icon": "🎓",
+        "title": "Lerngruppen & Community-Events",
+        "desc": "Organisierte Lerngruppen und Events zur Prüfungsvorbereitung — gemeinsam lernt es sich besser und du bist nie allein auf dem Weg zur Prüfung."
+      },
+      {
+        "icon": "🤝",
+        "title": "Unterstützung von Profis",
+        "desc": "Profitiere von der Erfahrung aktiver Fachinformatiker aus verschiedenen Bereichen — Systemintegration, Anwendungsentwicklung und mehr."
+      },
+      {
+        "icon": "🆓",
+        "title": "Kostenlos — für immer",
+        "desc": "Alles, was wir anbieten, ist und bleibt kostenlos. Wir wissen, dass Azubis kein großes Budget haben — und wir wollen nicht daran verdienen. Kein Abo, keine Paywall, keine versteckten Kosten."
+      }
+    ]
+  },
+  "footer": {
+    "copyright": "© {year} Fachinformatiker Wiki. Alle Rechte vorbehalten.",
+    "madeWith": "Mit ❤️ gemacht von der Community"
+  }
+}
