@@ -6,7 +6,7 @@ export type MessageSchema = typeof en
 
 const savedLocale = localStorage.getItem('locale') ?? 'de'
 
-export const i18n = createI18n<[MessageSchema], 'en' | 'de'>({
+export const i18n = createI18n({
   legacy: false,
   locale: savedLocale as 'en' | 'de',
   fallbackLocale: 'en',
