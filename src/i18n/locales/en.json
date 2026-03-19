@@ -1,0 +1,54 @@
+{
+  "hero": {
+    "badge": "By Apprentices. For Apprentices.",
+    "headline1": "Ace your",
+    "headline2": "Apprenticeship",
+    "subheadline": "Fachinformatiker Wiki is a community-driven platform for IT apprentices in Germany. Self-made learning materials, seasoned professionals and verified IHK examiners — all in one place."
+  },
+  "features": {
+    "badge": "What we offer",
+    "headline": "Everything for your training",
+    "subheadline": "An active community of apprentices, industry professionals and IHK examiners — so you're fully prepared for your final exam.",
+    "items": [
+      {
+        "icon": "📚",
+        "title": "Self-made Learning Materials",
+        "desc": "Study guides, summaries and practice tasks created by apprentices for apprentices — practical and tailored to the IHK exam."
+      },
+      {
+        "icon": "💬",
+        "title": "Ask Questions & Get Answers",
+        "desc": "Post your questions in the forum and get answers from experienced IT professionals and verified IHK examiners."
+      },
+      {
+        "icon": "✅",
+        "title": "Verified IHK Examiners",
+        "desc": "Real IHK examiners are part of our community. Get direct insight into exam expectations and grading criteria straight from the source."
+      },
+      {
+        "icon": "👨‍💻",
+        "title": "GitHub Community",
+        "desc": "Learn through real projects on our GitHub. Collaborative coding, code reviews and open-source contributions with people who work in the field every day."
+      },
+      {
+        "icon": "🎓",
+        "title": "Study Groups & Community Events",
+        "desc": "Organised study groups and exam prep events — learning together is more effective and you're never alone on the road to your exam."
+      },
+      {
+        "icon": "🤝",
+        "title": "Support from Professionals",
+        "desc": "Benefit from the experience of active IT professionals across different specialisations — system integration, application development and more."
+      },
+      {
+        "icon": "🆓",
+        "title": "Free — Forever",
+        "desc": "Everything we offer is and always will be free. We know apprentices don't have a big budget — and we have no interest in profiting from that. No subscriptions, no paywalls, no hidden costs."
+      }
+    ]
+  },
+  "footer": {
+    "copyright": "© {year} Fachinformatiker Wiki. All rights reserved.",
+    "madeWith": "Made with ❤️ by the Community"
+  }
+}

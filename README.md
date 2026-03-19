@@ -1,2 +1,34 @@
-# Portal
-🚀 Landing Page &amp; zentraler Einstiegspunkt für die Fachinformatiker Wiki Community
+# Fachinformatiker Wiki — Portal
+
+Die Landing Page des **Fachinformatiker Wiki**, einer kostenlosen Community-Plattform für Auszubildende in IT-Berufen.
+
+## Tech Stack
+
+- [Vue 3](https://vuejs.org/) + TypeScript
+- [Vite](https://vite.dev/)
+- [Tailwind CSS v4](https://tailwindcss.com/) (via `@tailwindcss/vite`)
+- [Pinia](https://pinia.vuejs.org/) — State Management
+- [vue-i18n v11](https://vue-i18n.intlify.dev/) — Mehrsprachigkeit (DE / EN)
+
+## Voraussetzungen
+
+- Node.js ≥ 20
+- [pnpm](https://pnpm.io/)
+
+## Installation
+
+```bash
+pnpm install
+```
+
+## Befehle
+
+| Befehl            | Beschreibung                        |
+| ----------------- | ----------------------------------- |
+| `pnpm dev`        | Entwicklungsserver starten          |
+| `pnpm build`      | Produktions-Build erstellen         |
+| `pnpm preview`    | Produktions-Build lokal vorschauen  |
+
+## Lizenz
+
+Siehe [LICENSE](LICENSE).
