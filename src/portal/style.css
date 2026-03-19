@@ -52,6 +52,31 @@ body {
   background-clip: text;
 }
 
+/* Hero headline gradient — animated purple → pink */
+@property --hero-grad-pos {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 0%;
+}
+
+@keyframes heroGradPan {
+  0%   { --hero-grad-pos: 0%; }
+  50%  { --hero-grad-pos: 100%; }
+  100% { --hero-grad-pos: 0%; }
+}
+
+.hero-gradient-text {
+  background: linear-gradient(135deg, #bf5fff, #ff2d78, #d580ff, #bf5fff);
+  background-size: 300% 300%;
+  background-position: var(--hero-grad-pos) 50%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: heroGradPan 6s ease infinite;
+  text-shadow: none;
+  filter: drop-shadow(0 0 24px rgba(191, 95, 255, 0.55));
+}
+
 /* Animated gradient border */
 @keyframes gradientShift {
   0% { background-position: 0% 50%; }
@@ -96,4 +121,25 @@ body {
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #d580ff;
+}
+
+/* ── Page entrance animations ────────────────────────────────── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Vue Transition classes used in portal components */
+.fade-up-enter-active { transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.16, 1, 0.3, 1); }
+.fade-up-enter-from   { opacity: 0; transform: translateY(28px); }
+
+/* Scroll-reveal: added via JS when section enters viewport */
+.card-animated {
+  animation: fadeUp 0.65s cubic-bezier(0.16, 1, 0.3, 1) var(--delay, 0ms) both;
+}
+
+/* ── Background particle float ───────────────────────────────── */
+@keyframes floatParticle {
+  from { transform: translateY(0)     scale(1);   opacity: 0.2; }
+  to   { transform: translateY(-44px) scale(2);   opacity: 0.7; }
 }
