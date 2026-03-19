@@ -1,6 +1,5 @@
 {
   "hero": {
-    "badge": "Von Azubis. Für Azubis.",
     "headline1": "Gemeinsam durch",
     "headline2": "die Ausbildung",
     "subheadline": "Fachinformatiker Wiki ist eine Community-getriebene Plattform für alle Fachinformatiker-Azubis. Selbst erstellte Lernmaterialien, erfahrene Praxisprofis und verifizierte IHK-Prüfer — alles an einem Ort."
@@ -49,6 +48,6 @@
   },
   "footer": {
     "copyright": "© {year} Fachinformatiker Wiki. Alle Rechte vorbehalten.",
-    "madeWith": "Mit ❤️ gemacht von der Community"
+    "madeWith": "Mit ❤️ entwickelt von der Community"
   }
 }

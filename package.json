@@ -4,8 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vue-tsc -b && vite build",
+    "dev:portal": "vite --config vite.portal.config.ts",
+    "dev:error": "vite --config vite.error.config.ts",
+    "build": "vue-tsc -b && vite build --config vite.portal.config.ts && vite build --config vite.error.config.ts",
     "preview": "vite preview"
   },
   "dependencies": {

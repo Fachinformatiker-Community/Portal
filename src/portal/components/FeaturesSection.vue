@@ -1,16 +1,29 @@
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { useIntersectionObserver } from '@vueuse/core'
 
 const { t, tm } = useI18n()
 
 const features = computed(() => tm('features.items') as Array<{ icon: string; title: string; desc: string }>)
+
+const sectionRef = ref<HTMLElement | null>(null)
+const featuresVisible = ref(false)
+
+const { stop } = useIntersectionObserver(
+  sectionRef,
+  ([{ isIntersecting }]) => {
+    if (isIntersecting) {
+      featuresVisible.value = true
+      stop()
+    }
+  },
+  { threshold: 0.1 }
+)
 </script>
 
 <template>
-  <section id="features" class="py-24 dark:bg-[#09090f] bg-white relative overflow-hidden">
-    <!-- Background accent -->
-    <div class="absolute top-0 right-0 w-96 h-96 rounded-full opacity-5 dark:opacity-10 blur-[120px] bg-[#00e5ff] pointer-events-none"></div>
+  <section id="features" ref="sectionRef" class="py-24 relative overflow-hidden">
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <!-- Section header -->
@@ -32,6 +45,8 @@ const features = computed(() => tm('features.items') as Array<{ icon: string; ti
           v-for="(feature, index) in features"
           :key="index"
           class="group relative p-6 rounded-2xl dark:bg-[#16161f] bg-gray-50 dark:border border border-gray-200 dark:border-[#2a2a3a] hover:border-[#bf5fff] dark:hover:border-[#bf5fff] transition-all duration-300 hover:shadow-lg hover:shadow-[#bf5fff]/10 cursor-default"
+          :class="featuresVisible ? 'card-animated' : 'opacity-0'"
+          :style="{ '--delay': `${index * 80}ms` }"
         >
           <!-- Gradient top border on hover -->
           <div class="absolute inset-x-0 top-0 h-px rounded-t-2xl bg-gradient-to-r from-transparent via-[#bf5fff] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>

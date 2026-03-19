@@ -1,6 +1,5 @@
 {
   "hero": {
-    "badge": "By Apprentices. For Apprentices.",
     "headline1": "Ace your",
     "headline2": "Apprenticeship",
     "subheadline": "Fachinformatiker Wiki is a community-driven platform for IT apprentices in Germany. Self-made learning materials, seasoned professionals and verified IHK examiners — all in one place."
@@ -49,6 +48,6 @@
   },
   "footer": {
     "copyright": "© {year} Fachinformatiker Wiki. All rights reserved.",
-    "madeWith": "Made with ❤️ by the Community"
+    "madeWith": "developed with ❤️ by the Community"
   }
 }
