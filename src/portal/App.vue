@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import NavBar from '@/components/NavBar.vue'
-import HeroSection from '@/components/HeroSection.vue'
-import FeaturesSection from '@/components/FeaturesSection.vue'
-import FooterSection from '@/components/FooterSection.vue'
+import NavBar from '@/portal/components/NavBar.vue'
+import HeroSection from '@/portal/components/HeroSection.vue'
+import FeaturesSection from '@/portal/components/FeaturesSection.vue'
+import FooterSection from '@/portal/components/FooterSection.vue'
 </script>
 
 <template>

@@ -3,12 +3,16 @@ import vue from '@vitejs/plugin-vue'
 import tailwindcss from '@tailwindcss/vite'
 import { resolve } from 'path'
 
-// https://vite.dev/config/
 export default defineConfig({
+  root: resolve(__dirname, 'src/portal'),
   plugins: [vue(), tailwindcss()],
   resolve: {
     alias: {
       '@': resolve(__dirname, 'src'),
     },
+  },
+  build: {
+    outDir: resolve(__dirname, 'dist/portal'),
+    emptyOutDir: true,
   },
 })
