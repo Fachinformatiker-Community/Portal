@@ -9,12 +9,14 @@ const isMobileMenuOpen = ref(false)
 
 const { protocol, hostname } = window.location
 const forumHref = `${protocol}//forum.${hostname}`
+const statusHref = `${protocol}//status.${hostname}`
 
 const navLinks = [
   { label: 'Wiki',    href: '/wiki',                                       external: false },
   { label: 'Forum',  href: forumHref,                                      external: false },
   { label: 'GitHub', href: 'https://github.com/Fachinformatiker-Community', external: true  },
   { label: 'Discord',href: 'https://discord.gg/fachinformatik',            external: true  },
+  { label: 'Status',href: statusHref,                                    external: false },
 ]
 
 function handleScroll() {
