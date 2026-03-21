@@ -7,6 +7,14 @@ const { t, tm } = useI18n()
 
 const features = computed(() => tm('features.items') as Array<{ icon: string; title: string; desc: string }>)
 
+const iconPrefix: Record<string, string> = {
+  github: 'fab',
+}
+
+function getIconProp(name: string): [string, string] {
+  return [iconPrefix[name] || 'fas', name]
+}
+
 const sectionRef = ref<HTMLElement | null>(null)
 const featuresVisible = ref(false)
 
@@ -51,7 +59,9 @@ const { stop } = useIntersectionObserver(
           <!-- Gradient top border on hover -->
           <div class="absolute inset-x-0 top-0 h-px rounded-t-2xl bg-gradient-to-r from-transparent via-[#bf5fff] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
-          <div class="text-3xl mb-4">{{ feature.icon }}</div>
+          <div class="text-3xl mb-4 dark:text-[#bf5fff] text-purple-600">
+            <font-awesome-icon :icon="getIconProp(feature.icon)" />
+          </div>
           <h3 class="text-lg font-bold dark:text-white text-gray-900 mb-2 group-hover:text-[#bf5fff] transition-colors duration-200">
             {{ feature.title }}
           </h3>

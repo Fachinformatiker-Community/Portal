@@ -14,7 +14,7 @@ const currentYear = new Date().getFullYear()
           {{ t('footer.copyright', { year: currentYear }) }}
         </p>
         <p class="text-sm text-gray-600">
-          {{ t('footer.madeWith') }}
+          {{ t('footer.madeWith').split('❤️')[0] }}<font-awesome-icon :icon="['fas', 'heart']" class="text-red-500 mx-0.5" />{{ t('footer.madeWith').split('❤️')[1] || '' }}
         </p>
       </div>
     </div>

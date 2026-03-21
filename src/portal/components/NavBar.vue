@@ -9,12 +9,14 @@ const isMobileMenuOpen = ref(false)
 
 const { protocol, hostname } = window.location
 const forumHref = `${protocol}//forum.${hostname}`
+const statusHref = `${protocol}//status.${hostname}`
 
 const navLinks = [
-  { label: 'Wiki',    href: '/wiki',                                       external: false },
-  { label: 'Forum',  href: forumHref,                                      external: false },
-  { label: 'GitHub', href: 'https://github.com/Fachinformatiker-Community', external: true  },
-  { label: 'Discord',href: 'https://discord.gg/fachinformatik',            external: true  },
+  { label: 'Wiki',    href: '/wiki',                                       external: false, icon: ['fas', 'book']         },
+  { label: 'Forum',  href: forumHref,                                      external: false, icon: ['fas', 'comments']     },
+  { label: 'GitHub', href: 'https://github.com/Fachinformatiker-Community', external: true,  icon: ['fab', 'github']       },
+  { label: 'Discord',href: 'https://discord.gg/fachinformatik',            external: true,  icon: ['fab', 'discord']      },
+  { label: 'Status',href: statusHref,                                    external: false, icon: ['fas', 'circle-check'] },
 ]
 
 function handleScroll() {
@@ -88,12 +90,8 @@ onUnmounted(() => window.removeEventListener('scroll', handleScroll))
             @click="isMobileMenuOpen = !isMobileMenuOpen"
             class="md:hidden w-9 h-9 flex items-center justify-center rounded-lg bg-[#16161f] text-gray-300 border border-[#2a2a3a]"
           >
-            <svg v-if="!isMobileMenuOpen" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-            <svg v-else class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-            </svg>
+            <font-awesome-icon v-if="!isMobileMenuOpen" :icon="['fas', 'bars']" class="w-5 h-5" />
+            <font-awesome-icon v-else :icon="['fas', 'xmark']" class="w-5 h-5" />
           </button>
         </div>
       </div>

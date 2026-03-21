@@ -10,41 +10,50 @@
     "subheadline": "An active community of apprentices, industry professionals and IHK examiners — so you're fully prepared for your final exam.",
     "items": [
       {
-        "icon": "📚",
+        "icon": "book",
         "title": "Self-made Learning Materials",
         "desc": "Study guides, summaries and practice tasks created by apprentices for apprentices — practical and tailored to the IHK exam."
       },
       {
-        "icon": "💬",
+        "icon": "comments",
         "title": "Ask Questions & Get Answers",
         "desc": "Post your questions in the forum and get answers from experienced IT professionals and verified IHK examiners."
       },
       {
-        "icon": "✅",
+        "icon": "circle-check",
         "title": "Verified IHK Examiners",
         "desc": "Real IHK examiners are part of our community. Get direct insight into exam expectations and grading criteria straight from the source."
       },
       {
-        "icon": "👨‍💻",
+        "icon": "github",
         "title": "GitHub Community",
         "desc": "Learn through real projects on our GitHub. Collaborative coding, code reviews and open-source contributions with people who work in the field every day."
       },
       {
-        "icon": "🎓",
+        "icon": "user-graduate",
         "title": "Study Groups & Community Events",
         "desc": "Organised study groups and exam prep events — learning together is more effective and you're never alone on the road to your exam."
       },
       {
-        "icon": "🤝",
+        "icon": "handshake",
         "title": "Support from Professionals",
         "desc": "Benefit from the experience of active IT professionals across different specialisations — system integration, application development and more."
       },
       {
-        "icon": "🆓",
+        "icon": "gift",
         "title": "Free — Forever",
         "desc": "Everything we offer is and always will be free. We know apprentices don't have a big budget — and we have no interest in profiting from that. No subscriptions, no paywalls, no hidden costs."
       }
     ]
+  },
+  "discord": {
+    "badge": "Community",
+    "headline": "Join our Discord",
+    "subheadline": "Connect with hundreds of IT apprentices, professionals and IHK examiners in real time.",
+    "membersOnline": "{count} members online",
+    "join": "Join Server",
+    "more": "more",
+    "error": "Could not load the Discord widget. Join us directly instead!"
   },
   "footer": {
     "copyright": "© {year} Fachinformatiker Wiki. All rights reserved.",
