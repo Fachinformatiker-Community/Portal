@@ -2,6 +2,7 @@
 import NavBar from '@/portal/components/NavBar.vue'
 import HeroSection from '@/portal/components/HeroSection.vue'
 import FeaturesSection from '@/portal/components/FeaturesSection.vue'
+import DiscordWidget from '@/portal/components/DiscordWidget.vue'
 import FooterSection from '@/portal/components/FooterSection.vue'
 </script>
 
@@ -35,6 +36,7 @@ import FooterSection from '@/portal/components/FooterSection.vue'
     <main class="relative z-[1]">
       <HeroSection />
       <FeaturesSection />
+      <DiscordWidget />
     </main>
     <div class="relative z-[1]">
       <FooterSection />

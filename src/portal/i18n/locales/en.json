@@ -46,6 +46,15 @@
       }
     ]
   },
+  "discord": {
+    "badge": "Community",
+    "headline": "Join our Discord",
+    "subheadline": "Connect with hundreds of IT apprentices, professionals and IHK examiners in real time.",
+    "membersOnline": "{count} members online",
+    "join": "Join Server",
+    "more": "more",
+    "error": "Could not load the Discord widget. Join us directly instead!"
+  },
   "footer": {
     "copyright": "© {year} Fachinformatiker Wiki. All rights reserved.",
     "madeWith": "developed with ❤️ by the Community"

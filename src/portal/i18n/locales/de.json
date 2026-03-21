@@ -46,6 +46,15 @@
       }
     ]
   },
+  "discord": {
+    "badge": "Community",
+    "headline": "Tritt unserem Discord bei",
+    "subheadline": "Vernetze dich in Echtzeit mit hunderten Fachinformatiker-Azubis, Profis und IHK-Prüfern.",
+    "membersOnline": "{count} Mitglieder online",
+    "join": "Server beitreten",
+    "more": "weitere",
+    "error": "Das Discord-Widget konnte nicht geladen werden. Tritt uns direkt bei!"
+  },
   "footer": {
     "copyright": "© {year} Fachinformatiker Wiki. Alle Rechte vorbehalten.",
     "madeWith": "Mit ❤️ entwickelt von der Community"
