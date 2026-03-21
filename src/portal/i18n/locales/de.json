@@ -10,37 +10,37 @@
     "subheadline": "Eine aktive Community aus Azubis, Fachleuten aus der Praxis und IHK-Prüfern — damit du bestens für deine Abschlussprüfung vorbereitet bist.",
     "items": [
       {
-        "icon": "📚",
+        "icon": "book",
         "title": "Selbst erstellte Lernmaterialien",
         "desc": "Lernunterlagen, Zusammenfassungen und Übungsaufgaben, erstellt von Azubis für Azubis — praxisnah und auf die IHK-Prüfung zugeschnitten."
       },
       {
-        "icon": "💬",
+        "icon": "comments",
         "title": "Fragen stellen & Antworten bekommen",
         "desc": "Stell deine Fragen direkt im Forum — beantwortet von erfahrenen Fachinformatikern aus der Praxis und verifizierten IHK-Prüfern."
       },
       {
-        "icon": "✅",
+        "icon": "circle-check",
         "title": "Verifizierte IHK-Prüfer",
         "desc": "Echte IHK-Prüfer sind Teil unserer Community. Erhalte Einblicke in Prüfungserwartungen und typische Bewertungskriterien direkt von der Quelle."
       },
       {
-        "icon": "👨‍💻",
+        "icon": "github",
         "title": "GitHub Community",
         "desc": "Lerne mit echten Projekten auf unserem GitHub. Gemeinsam coden, Code-Reviews und Open-Source-Beiträge mit Menschen, die täglich in der Branche arbeiten."
       },
       {
-        "icon": "🎓",
+        "icon": "user-graduate",
         "title": "Lerngruppen & Community-Events",
         "desc": "Organisierte Lerngruppen und Events zur Prüfungsvorbereitung — gemeinsam lernt es sich besser und du bist nie allein auf dem Weg zur Prüfung."
       },
       {
-        "icon": "🤝",
+        "icon": "handshake",
         "title": "Unterstützung von Profis",
         "desc": "Profitiere von der Erfahrung aktiver Fachinformatiker aus verschiedenen Bereichen — Systemintegration, Anwendungsentwicklung und mehr."
       },
       {
-        "icon": "🆓",
+        "icon": "gift",
         "title": "Kostenlos — für immer",
         "desc": "Alles, was wir anbieten, ist und bleibt kostenlos. Wir wissen, dass Azubis kein großes Budget haben — und wir wollen nicht daran verdienen. Kein Abo, keine Paywall, keine versteckten Kosten."
       }
