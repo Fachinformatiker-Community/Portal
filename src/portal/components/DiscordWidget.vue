@@ -217,9 +217,7 @@ onMounted(async () => {
         :style="{ '--delay': '120ms' }"
       >
         <!-- Gradient top accent -->
-        <div
-          class="h-1 bg-gradient-to-r from-[#5865F2] via-[#bf5fff] to-[#00e5ff]"
-        ></div>
+        <div class="h-1 animated-gradient-bar"></div>
 
         <!-- Loading state -->
         <div v-if="loading" class="flex items-center justify-center py-20">
@@ -390,5 +388,17 @@ onMounted(async () => {
 .floating-avatar {
   animation: floatFade 5s ease-in-out infinite both;
   filter: blur(0.5px);
+}
+
+@keyframes gradientShift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animated-gradient-bar {
+  background: linear-gradient(90deg, #5865F2, #bf5fff, #00e5ff, #5865F2, #bf5fff);
+  background-size: 300% 100%;
+  animation: gradientShift 4s ease infinite;
 }
 </style>
